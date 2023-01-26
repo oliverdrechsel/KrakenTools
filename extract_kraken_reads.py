@@ -148,7 +148,7 @@ def process_kraken_report(report_line):
 def main():
     #Parse arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument('-k', dest='kraken_file', required=True,
+    parser.add_argument('-k','--kraken', dest='kraken_file', required=True,
         help='Kraken output file to parse')
     parser.add_argument('-s','-s1', '-1', '-U', dest='seq_file1', required=True,
         help='FASTA/FASTQ File containing the raw sequence letters.')
